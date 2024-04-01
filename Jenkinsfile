@@ -17,7 +17,7 @@ pipeline {
                     sh """
                     git bisect run bash -c '
                     mvn clean test
-                    if [ \\$? -eq 0 ]; then
+                    if [ \$? -eq 0 ]; then
                         exit 0
                     else
                         exit 1
