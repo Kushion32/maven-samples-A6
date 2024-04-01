@@ -4,6 +4,7 @@ pipeline {
       maven 'DHT_MAVEN' 
       jdk 'DHT_SENSE' 
   }
+  stages{
   stage('Git Bisect') {
             steps {
                 script {
@@ -45,3 +46,4 @@ pipeline {
             }
         }
   }
+}
